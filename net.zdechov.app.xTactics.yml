@@ -26,7 +26,7 @@ modules:
     sources:
       - type: svn
         url: https://svn.zdechov.net/xtactics/tags/1.4.0
-        revision: r382
+        revision: r401
     buildsystem: simple
     build-commands:
       - |
@@ -40,7 +40,7 @@ modules:
       - install -Dm644 Systems/*.xts -t $FLATPAK_DEST/share/xtactics/Systems
       - install -Dm644 Install/deb/xtactics.desktop -t $FLATPAK_DEST/share/applications
       - install -Dm644 Install/deb/xtactics.xml $FLATPAK_DEST/share/mime/packages/$FLAPTAK_ID.xml
-      - install -Dm644 Images/128x128/xtactics.png -t $FLATPAK_DEST/share/icons/hicolor/128x128/apps
-      - install -Dm644 Images/128x128/xtactics.png $FLATPAK_DEST/share/pixmaps/application-xtg.png
-      - install -Dm644 Images/128x128/xtactics.png $FLATPAK_DEST/share/pixmaps/application-xts.png
+      - install -Dm644 Images/256x256/xtactics.png -t $FLATPAK_DEST/share/icons/hicolor/256x256/apps
+      - install -Dm644 Images/256x256/xtactics.png $FLATPAK_DEST/share/pixmaps/application-xtg.png
+      - install -Dm644 Images/256x256/xtactics.png $FLATPAK_DEST/share/pixmaps/application-xts.png
       - install -Dm644 Install/flatpak/${FLATPAK_ID}.metainfo.xml -t $FLATPAK_DEST/share/metainfo
