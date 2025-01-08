@@ -26,7 +26,7 @@ modules:
     sources:
       - type: svn
         url: https://svn.zdechov.net/xtactics/tags/1.4.0
-        revision: r401
+        revision: r412
     buildsystem: simple
     build-commands:
       - |
